@@ -61,7 +61,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../functional/ivy/general.html">General</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../functional/ivy/gradients.html">Gradients</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../functional/ivy/layers.html">Layers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../functional/ivy/linalg.html">Linalg</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../functional/ivy/linear_algebra.html">Linear algebra</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../functional/ivy/losses.html">Losses</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../functional/ivy/manipulation.html">Manipulation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../functional/ivy/meta.html">Meta</a></li>
@@ -4816,6 +4816,9 @@
 
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">ivy</span><span class="o">.</span><span class="n">current_backend</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">)</span><span class="o">.</span><span class="n">pow</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="n">out</span><span class="p">)</span></div>
+
+
+<span class="nb">pow</span><span class="o">.</span><span class="n">unsupported_gradients</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;torch&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;float16&quot;</span><span class="p">]}</span>
 
 
 <div class="viewcode-block" id="remainder"><a class="viewcode-back" href="../../../../functional/ivy/elementwise/remainder/remainder_functional.html#ivy.functional.ivy.elementwise.remainder">[docs]</a><span class="nd">@to_native_arrays_and_back</span>
